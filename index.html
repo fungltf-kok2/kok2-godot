@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GKK2 Windows 公開測試的下載、安裝及更新方式。">
+  <title>GKK2 公開測試｜下載與安裝</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #161815; color: #f3eee4; line-height: 1.65; }
+    body { margin: 0; }
+    main { max-width: 40rem; margin: auto; padding: clamp(2rem, 7vw, 5rem) 1.5rem 3rem; }
+    h1 { font-size: clamp(2rem, 6vw, 3.25rem); line-height: 1.15; margin: 0 0 .7rem; }
+    h2 { font-size: 1.25rem; margin: 0 0 .6rem; }
+    p, ol, ul { margin: 0 0 .9rem; }
+    li + li { margin-top: .45rem; }
+    a { color: #efc484; text-underline-offset: .2em; }
+    a:focus-visible { outline: 2px solid #ffe1a9; outline-offset: 4px; border-radius: .2rem; }
+    .download { display: inline-block; background: #edc080; color: #20170f; border-radius: .35rem; padding: .58rem 1.05rem; font-weight: 700; text-decoration: none; }
+    .download:hover { background: #ffe0ac; }
+    .muted { color: #c8c7ba; }
+    section { border-top: 1px solid #59503e; margin-top: 1.7rem; padding-top: 1.25rem; }
+    code { color: #f4d49e; overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>GKK2 公開測試</h1>
+      <p class="muted">Windows 64 位元 · 首次下載約 1.92 GB</p>
+      <a class="download" href="https://github.com/fungltf-kok2/kok2-godot/releases">前往下載</a>
+    </header>
+    <section aria-labelledby="install">
+      <h2 id="install">首次安裝</h2>
+      <ol>
+        <li>在測試版本的 <strong>Assets</strong> 清單下載同一版本列出的三個 ZIP。
+          <ul>
+            <li>遊戲程式 <code>GKK2-alpha-…-client-windows-x86_64.zip</code></li>
+            <li>Godot 資源 <code>GKK2-godot-assets-….zip</code></li>
+            <li>外部資源 <code>GKK2-external-assets-….zip</code></li>
+          </ul>
+        </li>
+        <li>將三個 ZIP 解壓到同一位置，合併解壓出來的 <code>GKK2</code> 資料夾。</li>
+        <li>開啟 <code>GKK2\GKK2.exe</code>，在登入畫面註冊帳號或登入。</li>
+      </ol>
+    </section>
+    <section aria-labelledby="update">
+      <h2 id="update">更新遊戲</h2>
+      <p>先關閉遊戲，再按該版本的發佈說明更新。同名的資源 ZIP 可以沿用。</p>
+    </section>
+  </main>
+</body>
+</html>
