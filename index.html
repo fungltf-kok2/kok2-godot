@@ -20,14 +20,43 @@
     .muted { color: #c8c7ba; }
     section { border-top: 1px solid #59503e; margin-top: 1.7rem; padding-top: 1.25rem; }
     code { color: #f4d49e; overflow-wrap: anywhere; }
+    .guide { margin-top: 2rem; }
+.guide > p { color: #c8c7ba; }
+.guide-step { margin: 1.6rem 0 0; }
+.guide-step h3 { font-size: 1rem; margin: 0 0 .30rem; }
+.guide-step figcaption p { margin: 0 0 .55rem; }
+.guide-check { display: flex; flex-wrap: wrap; gap: .3rem .65rem; list-style: none; padding: 0; }
+.guide-check li { margin: 0; }
+.guide-shot {
+  position: relative; isolation: isolate; margin: 0; container-type: inline-size;
+  border: 1px solid #655741; border-radius: .5rem; overflow: hidden; background: #202020;
+  --focus: #ffe05b;
+}
+.guide-shot img { width: 100%; height: auto; display: block; }
+.guide-shot > :is(.guide-box, .guide-note, svg) { position: absolute; pointer-events: none; }
+.guide-box {
+  left: var(--x); top: var(--y); width: var(--w); height: var(--h); box-sizing: border-box;
+  border: clamp(1px, .35cqw, 3px) solid var(--focus); border-radius: .55cqw;
+  box-shadow: 0 0 0 1px #171305e0, 0 0 8px #1813008c;
+}
+.guide-note {
+  left: var(--x); top: var(--y); white-space: nowrap;
+  font-size: clamp(9px, 1.85cqw, 15px); font-weight: 700; line-height: 1.35;
+  border: 1px solid var(--focus); border-radius: .3rem; padding: .3em .55em;
+  color: #fff5c9; background: #211a0df5; box-shadow: 0 2px 9px #0009;
+}
+.guide-shot svg { inset: 0; width: 100%; height: 100%; }
+.guide-arrow { fill: none; stroke: var(--focus); stroke-width: .38; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 1px 1px #161000); }
+@media (min-width: 74rem) {
+  .guide-shot { width: min(57rem, calc(100vw - 3rem)); margin-left: calc((40rem - min(57rem, 100vw - 3rem)) / 2); }
+}
+section[aria-labelledby="install"] { border-top: 0; padding-top: 0; }
   </style>
 </head>
 <body>
   <main>
     <header>
       <h1>GKK2 重製測試</h1>
-      <p class="muted">Windows 64 位元</p>
-      <a class="download" href="#install">下載 Windows 版</a>
     </header>
     <section aria-labelledby="install">
       <h2 id="install">首次安裝</h2>
@@ -43,9 +72,54 @@
         <li>開啟 <code>GKK2\GKK2.exe</code>，於登入畫面註冊帳號或登入。</li>
       </ol>
     </section>
-    <section aria-labelledby="update">
-      <h2 id="update">更新遊戲</h2>
-      <p>請先關閉遊戲，再按該版本的發佈說明更新。檔名相同的資源包可以沿用。</p>
+    <section class="guide" aria-labelledby="install-guide">
+      <h2 id="install-guide">圖解安裝教學</h2>
+      <p>下載上方三個 ZIP 後，依次解壓。下圖中的檔名會隨版本而變更。</p>
+      <figure class="guide-step">
+        <figcaption><h3>1. 解壓 Game Core</h3><p>開啟 Game Core ZIP，將裡面的 GKK2 資料夾拖到安裝位置。圖中以 Install 資料夾為例。</p></figcaption>
+        <div class="guide-shot">
+          <img src="images/1-unzip-core.webp" width="1624" height="1024" alt="檔案總管開啟 Game Core ZIP，並把 GKK2 資料夾拖到 Install。">
+          <svg viewBox="0 0 100 80.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 8.8 26.0 C 18 30 24 66 68.9 69.2 M 66.4 67.5 L 68.9 69.2 L 66.2 70.7"/></svg>
+          <span class="guide-box" style="--x:0.8%;--y:1.875%;--w:23.1%;--h:6.374999999999999%" aria-hidden="true"></span><span class="guide-box" style="--x:1.6%;--y:29.5%;--w:7.1%;--h:4.375%" aria-hidden="true"></span>
+          <span class="guide-note" style="--x:29%;--y:77.5%" aria-hidden="true">拖放 GKK2 資料夾</span>
+        </div>
+      </figure>
+      <figure class="guide-step">
+        <figcaption><h3>2. 解壓 Pack1</h3><p>開啟 Pack1 ZIP，將裡面的 GKK2 資料夾拖到相同的安裝位置。Windows 詢問時，確認合併資料夾。</p></figcaption>
+        <div class="guide-shot">
+          <img src="images/2-unzip-pack1.webp" width="1624" height="1024" alt="檔案總管開啟 Pack1 ZIP，Install 內已有 Game Core 的 GKK2 資料夾。">
+          <svg viewBox="0 0 100 80.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 8.8 26.0 C 18 30 24 71 66.6 72.3 M 64.1 70.6 L 66.6 72.3 L 63.9 73.8"/></svg>
+          <span class="guide-box" style="--x:0.8%;--y:1.875%;--w:16.7%;--h:6.374999999999999%" aria-hidden="true"></span><span class="guide-box" style="--x:1.6%;--y:29.5%;--w:7.1%;--h:4.375%" aria-hidden="true"></span>
+          <span class="guide-note" style="--x:28%;--y:80.0%" aria-hidden="true">拖放 GKK2 資料夾</span>
+        </div>
+      </figure>
+      <figure class="guide-step">
+        <figcaption><h3>3. 解壓 Pack2</h3><p>開啟 Pack2 ZIP，將裡面的 GKK2 資料夾拖到相同的安裝位置，再次合併。</p></figcaption>
+        <div class="guide-shot">
+          <img src="images/3-unzip-pack2.webp" width="1624" height="1024" alt="檔案總管開啟 Pack2 ZIP，並將內容合併至 Install 內同一個 GKK2 資料夾。">
+          <svg viewBox="0 0 100 80.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 8.8 26.0 C 18 30 24 67 70.0 69.4 M 67.5 67.7 L 70.0 69.4 L 67.3 70.9"/></svg>
+          <span class="guide-box" style="--x:0.8%;--y:1.875%;--w:16.7%;--h:6.374999999999999%" aria-hidden="true"></span><span class="guide-box" style="--x:1.6%;--y:29.5%;--w:7.1%;--h:4.375%" aria-hidden="true"></span>
+          <span class="guide-note" style="--x:28%;--y:80.0%" aria-hidden="true">拖放 GKK2 資料夾</span>
+        </div>
+      </figure>
+      <figure class="guide-step">
+        <figcaption><h3>4. 檢查安裝結果</h3><p>開啟合併後的 GKK2 資料夾，確認下列五項都在同一層。然後開啟 GKK2.exe。</p><ul class="guide-check"><li><code>engine</code></li><li><code>runtime</code></li><li><code>GKK2.exe</code></li><li><code>GKK2-external-….pck</code></li><li><code>GKK2-godot-….pck</code></li></ul></figcaption>
+        <div class="guide-shot">
+          <img src="images/4-after-unzip.webp" width="1624" height="806" alt="合併後的 GKK2 資料夾顯示 engine、runtime、GKK2.exe 和兩個 PCK 檔案。">
+          <svg viewBox="0 0 100 63.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 32.55 28.6 V 30.1 M 31.5 29.0 L 32.55 30.1 L 33.6 29.0"/></svg>
+          <span class="guide-box" style="--x:4.0%;--y:48.41269841269841%;--w:56.9%;--h:35.3968253968254%" aria-hidden="true"></span><span class="guide-box" style="--x:26.8%;--y:48.41269841269841%;--w:11.5%;--h:26.031746031746028%" aria-hidden="true"></span>
+          <span class="guide-note" style="--x:4.0%;--y:87.3015873015873%" aria-hidden="true">確認這五項都在同一層</span><span class="guide-note" style="--x:26.8%;--y:39.682539682539684%" aria-hidden="true">開啟 GKK2.exe</span>
+        </div>
+      </figure>
+      <figure class="guide-step">
+        <figcaption><h3>5. 註冊帳號</h3><p>在登入畫面右下角點擊「註冊帳號」。填寫資料後，在視窗內點擊「註冊」。</p></figcaption>
+        <div class="guide-shot">
+          <img src="images/5-create-account.webp" width="1624" height="1280" alt="GKK2 登入畫面，右下角有「註冊帳號」按鈕，並已開啟建立帳號視窗。">
+          <svg viewBox="0 0 100 100.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 77 96 Q 81 96 83.3 94.6 M 81.4 93.8 L 83.3 94.6 L 82.1 96.5"/></svg>
+          <span class="guide-box" style="--x:83.6%;--y:92.1%;--w:10.4%;--h:4.0%" aria-hidden="true"></span>
+          <span class="guide-note" style="--x:57%;--y:94.0%" aria-hidden="true">點擊「註冊帳號」</span>
+        </div>
+      </figure>
     </section>
   </main>
 </body>
