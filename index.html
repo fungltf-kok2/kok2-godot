@@ -51,6 +51,12 @@
   .guide-shot { width: min(57rem, calc(100vw - 3rem)); margin-left: calc((40rem - min(57rem, 100vw - 3rem)) / 2); }
 }
 section[aria-labelledby="install"] { border-top: 0; padding-top: 0; }
+  
+    .install-paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .install-paths section { margin: 0; padding: 1.1rem; border: 1px solid #59503e; border-radius: .5rem; }
+    .install-paths ol { padding-left: 1.35rem; margin-bottom: 0; }
+    .install-paths h2 small { display: block; font-size: .82rem; color: #c8c7ba; font-weight: 400; }
+    @media (max-width: 40rem) { .install-paths { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -58,23 +64,31 @@ section[aria-labelledby="install"] { border-top: 0; padding-top: 0; }
     <header>
       <h1>GKK2 重製測試</h1>
     </header>
-    <section aria-labelledby="install">
-      <h2 id="install">首次安裝</h2>
-      <ol>
-        <li>下載以下三個 ZIP 檔案。
-          <ul>
-            <li><a href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Core-0.4.5-Windows.zip">Game Core</a>（約 175 MB）</li>
-            <li><a href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Pack1-v3.zip">Pack1 - base.pck</a>（約 176 MB）</li>
-            <li><a href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Pack2-v4.zip">Pack2 - res.pck</a>（約 1.5 GB）</li>
-          </ul>
-        </li>
-        <li>將三個 ZIP 解壓至同一位置，合併解壓後的 <code>GKK2</code> 資料夾。</li>
-        <li>開啟 <code>GKK2\GKK2.exe</code>，點擊「開始遊戲」，再註冊帳號或登入。</li>
-      </ol>
-    </section>
+    <div class="install-paths">
+      <section aria-labelledby="first-download">
+        <h2 id="first-download">首次下載</h2>
+        <p><a class="download" href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Core-0.4.5-Windows.zip">下載 Game Core</a></p>
+        <ol>
+          <li>解壓 ZIP 至安裝位置。</li>
+          <li>開啟解壓後的 <code>GKK2</code> 資料夾，再開啟 <code>GKK2.exe</code>。</li>
+          <li>點擊「自動下載並安裝」。完成後點擊「開始遊戲」。</li>
+        </ol>
+      </section>
+      <section aria-labelledby="upgrade-042">
+        <h2 id="upgrade-042">從 0.4.2 更新 <small>11 月 23 日版本</small></h2>
+        <p><a class="download" href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Launcher-4005-Windows.zip">下載新版啟動器</a></p>
+        <ol>
+          <li>關閉遊戲及啟動器。</li>
+          <li>將 ZIP 內的 <code>GKK2.exe</code> 解壓至原有的 <code>GKK2</code> 資料夾，取代同名檔案。</li>
+          <li>開啟新版啟動器，點擊「自動下載並安裝」。完成後點擊「開始遊戲」。</li>
+        </ol>
+      </section>
+    </div>
     <section class="guide" aria-labelledby="install-guide">
-      <h2 id="install-guide">圖解安裝教學</h2>
-      <p>下載上方三個 ZIP 後，依次解壓。下圖中的檔名會隨版本而變更。</p>
+      <h2 id="install-guide">手動安裝圖解</h2>
+      <p>手動安裝須下載 Game Core、
+        <a href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Pack1-v3.zip">Pack1 - base.pck</a> 及
+        <a href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Pack2-v4.zip">Pack2 - res.pck</a>。下圖中的檔名會隨版本而變更。</p>
       <figure class="guide-step">
         <figcaption><h3>1. 解壓 Game Core</h3><p>開啟 Game Core ZIP，將裡面的 GKK2 資料夾拖到安裝位置。圖中以 Install 資料夾為例。</p></figcaption>
         <div class="guide-shot">
