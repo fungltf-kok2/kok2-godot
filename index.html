@@ -20,43 +20,44 @@
     .muted { color: #c8c7ba; }
     section { border-top: 1px solid #59503e; margin-top: 1.7rem; padding-top: 1.25rem; }
     code { color: #f4d49e; overflow-wrap: anywhere; }
-    .guide { margin-top: 2rem; }
-.guide > p { color: #c8c7ba; }
-.guide-step { margin: 1.6rem 0 0; }
-.guide-step h3 { font-size: 1rem; margin: 0 0 .30rem; }
-.guide-step figcaption p { margin: 0 0 .55rem; }
-.guide-check { display: flex; flex-wrap: wrap; gap: .3rem .65rem; list-style: none; padding: 0; }
-.guide-check li { margin: 0; }
-.guide-shot {
-  position: relative; isolation: isolate; margin: 0; container-type: inline-size;
-  border: 1px solid #655741; border-radius: .5rem; overflow: hidden; background: #202020;
-  --focus: #ffe05b;
-}
-.guide-shot img { width: 100%; height: auto; display: block; }
-.guide-shot > :is(.guide-box, .guide-note, svg) { position: absolute; pointer-events: none; }
-.guide-box {
-  left: var(--x); top: var(--y); width: var(--w); height: var(--h); box-sizing: border-box;
-  border: clamp(1px, .35cqw, 3px) solid var(--focus); border-radius: .55cqw;
-  box-shadow: 0 0 0 1px #171305e0, 0 0 8px #1813008c;
-}
-.guide-note {
-  left: var(--x); top: var(--y); white-space: nowrap;
-  font-size: clamp(9px, 1.85cqw, 15px); font-weight: 700; line-height: 1.35;
-  border: 1px solid var(--focus); border-radius: .3rem; padding: .3em .55em;
-  color: #fff5c9; background: #211a0df5; box-shadow: 0 2px 9px #0009;
-}
-.guide-shot svg { inset: 0; width: 100%; height: 100%; }
-.guide-arrow { fill: none; stroke: var(--focus); stroke-width: .38; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 1px 1px #161000); }
-@media (min-width: 74rem) {
-  .guide-shot { width: min(57rem, calc(100vw - 3rem)); margin-left: calc((40rem - min(57rem, 100vw - 3rem)) / 2); }
-}
-section[aria-labelledby="install"] { border-top: 0; padding-top: 0; }
-  
     .install-paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0; }
     .install-paths section { margin: 0; padding: 1.1rem; border: 1px solid #59503e; border-radius: .5rem; }
-    .install-paths ol { padding-left: 1.35rem; margin-bottom: 0; }
     .install-paths h2 small { display: block; font-size: .82rem; color: #c8c7ba; font-weight: 400; }
     @media (max-width: 40rem) { .install-paths { grid-template-columns: 1fr; } }
+      html { scroll-behavior: smooth; }
+    main { max-width: 49rem; }
+    .install-paths section { position: relative; }
+    .install-paths section > p:last-child { margin-bottom: 0; }
+    .install-paths .download { position: relative; z-index: 1; }
+    .card-action, .instruction-toggle {
+      font: inherit; text-align: left; color: inherit; background: none; border: 0; padding: 0; cursor: pointer;
+    }
+    .card-action::after { position: absolute; inset: 0; content: ""; border-radius: .5rem; }
+    .card-action:focus-visible, .instruction-toggle:focus-visible { outline: 2px solid #ffe1a9; outline-offset: 4px; }
+    .install-paths section:has(.card-action):hover { border-color: #ab8a52; }
+    .instruction { border: 1px solid #59503e; border-radius: .5rem; margin: .85rem 0 0; padding: 0; scroll-margin-top: 1rem; }
+    .instruction h2 { margin: 0; }
+    .instruction-toggle { display: flex; align-items: center; gap: .35rem; width: 100%; padding: .8rem 1rem; }
+    .instruction-toggle:hover { color: #efc484; }
+    .instruction-toggle svg { width: 1.25rem; height: 1.25rem; color: #efc484; transition: transform 240ms ease; }
+    .instruction[data-open="true"] .instruction-toggle svg { transform: rotate(90deg); }
+    .instruction-slide { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 300ms ease; }
+    .instruction[data-open="true"] .instruction-slide { grid-template-rows: 1fr; }
+    .instruction-content { overflow: hidden; min-height: 0; }
+    .guide-step { margin: 0 1rem 1.3rem; }
+    .guide-step:first-child { margin-top: .4rem; }
+    .guide-step figcaption { margin-bottom: .45rem; font-weight: 600; }
+    .guide-shot { position: relative; overflow: hidden; border: 1px solid #655741; border-radius: .35rem; background: #202020; }
+    .guide-shot img { width: 100%; height: auto; display: block; }
+    .guide-shot svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .click-mark, .zip-mark, .drag-mark { fill: none; stroke-width: 3px; vector-effect: non-scaling-stroke; }
+    .click-mark { stroke: #008cff; filter: drop-shadow(0 0 1px #000); }
+    .zip-mark, .drag-mark { stroke: #ffe05b; }
+    .manual-links { margin: .25rem 1rem 1rem; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .instruction-slide, .instruction-toggle svg { transition: none; }
+    }
   </style>
 </head>
 <body>
@@ -68,73 +69,161 @@ section[aria-labelledby="install"] { border-top: 0; padding-top: 0; }
       <section aria-labelledby="first-download">
         <h2 id="first-download">首次下載</h2>
         <p><a class="download" href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Core-0.4.5-Windows.zip">下載 Game Core</a></p>
-        <ol>
-          <li>解壓 ZIP 至安裝位置。</li>
-          <li>開啟解壓後的 <code>GKK2</code> 資料夾，再開啟 <code>GKK2.exe</code>。</li>
-          <li>點擊「自動下載並安裝」。完成後點擊「開始遊戲」。</li>
-        </ol>
+
       </section>
       <section aria-labelledby="upgrade-042">
-        <h2 id="upgrade-042">從 0.4.2 更新 <small>11 月 23 日版本</small></h2>
+        <h2 id="upgrade-042"><button class="card-action" type="button" aria-controls="update-steps">從 0.4.2 更新 <small>11 月 23 日版本</small></button></h2>
         <p><a class="download" href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Launcher-4005-Windows.zip">下載新版啟動器</a></p>
-        <ol>
-          <li>關閉遊戲及啟動器。</li>
-          <li>將 ZIP 內的 <code>GKK2.exe</code> 解壓至原有的 <code>GKK2</code> 資料夾，取代同名檔案。</li>
-          <li>開啟新版啟動器，點擊「自動下載並安裝」。完成後點擊「開始遊戲」。</li>
-        </ol>
+        <p>取代原有的GKK2.exe後, 使用啟動器即可自動更新遊戲</p>
+
       </section>
     </div>
-    <section class="guide" aria-labelledby="install-guide">
-      <h2 id="install-guide">手動安裝圖解</h2>
-      <p>手動安裝須下載 Game Core、
-        <a href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Pack1-v3.zip">Pack1 - base.pck</a> 及
-        <a href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Pack2-v4.zip">Pack2 - res.pck</a>。下圖中的檔名會隨版本而變更。</p>
-      <figure class="guide-step">
-        <figcaption><h3>1. 解壓 Game Core</h3><p>開啟 Game Core ZIP，將裡面的 GKK2 資料夾拖到安裝位置。圖中以 Install 資料夾為例。</p></figcaption>
-        <div class="guide-shot">
-          <img src="images/1-unzip-core.webp" width="1624" height="1024" alt="檔案總管開啟 Game Core ZIP，並把 GKK2 資料夾拖到 Install。">
-          <svg viewBox="0 0 100 80.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 8.8 26.0 C 18 30 24 66 68.9 69.2 M 66.4 67.5 L 68.9 69.2 L 66.2 70.7"/></svg>
-          <span class="guide-box" style="--x:0.8%;--y:1.875%;--w:23.1%;--h:6.374999999999999%" aria-hidden="true"></span><span class="guide-box" style="--x:1.6%;--y:29.5%;--w:7.1%;--h:4.375%" aria-hidden="true"></span>
-          <span class="guide-note" style="--x:29%;--y:77.5%" aria-hidden="true">拖放 GKK2 資料夾</span>
+<div class="instructions"><section class="instruction" data-open="true">
+      <h2><button class="instruction-toggle" id="first-toggle" type="button" aria-expanded="true" aria-controls="first-steps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>首次安裝</button></h2>
+      <div class="instruction-slide" id="first-steps" role="region" aria-labelledby="first-toggle">
+        <div class="instruction-content">
+        <figure class="guide-step">
+          <figcaption>1. 開啟 Game Core ZIP，將裡面的 GKK2 資料夾拖到安裝位置。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/first-1.webp" width="1738" height="1322" loading="lazy" alt="開啟 Game Core ZIP，將裡面的 GKK2 資料夾拖到安裝位置。">
+            <svg viewBox="0 0 1738 1322" aria-hidden="true"><rect class="zip-mark" x="77" y="65" width="349" height="41" rx="5"/><defs><marker id="first-1-arrow" markerWidth="22" markerHeight="22" refX="20" refY="11" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 2 L20 11 L1 20 Z" fill="#ffe05b"/></marker></defs><path class="drag-mark" d="M 242 461 C 628 461 1120 691 1565 694" marker-end="url(#first-1-arrow)"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>2. 開啟解壓後的 GKK2 資料夾。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/first-2.webp" width="1738" height="1322" loading="lazy" alt="開啟解壓後的 GKK2 資料夾。">
+            <svg viewBox="0 0 1738 1322" aria-hidden="true"><circle class="click-mark" cx="1528.27" cy="642.25" r="75.01"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>3. 開啟資料夾內的 GKK2.exe。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/first-3.webp" width="1738" height="1322" loading="lazy" alt="開啟資料夾內的 GKK2.exe。">
+            <svg viewBox="0 0 1738 1322" aria-hidden="true"><circle class="click-mark" cx="820.39" cy="464.11" r="112.51"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>4. 若出現 Windows SmartScreen 提示，確認檔案來自本頁後，點擊「其他資訊」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/first-4.webp" width="1738" height="1322" loading="lazy" alt="若出現 Windows SmartScreen 提示，確認檔案來自本頁後，點擊「其他資訊」。">
+            <svg viewBox="0 0 1738 1322" aria-hidden="true"><circle class="click-mark" cx="464.11" cy="506.30" r="65.63"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>5. 點擊「仍要執行」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/first-5.webp" width="1738" height="1322" loading="lazy" alt="點擊「仍要執行」。">
+            <svg viewBox="0 0 1738 1322" aria-hidden="true"><circle class="click-mark" cx="1073.54" cy="1153.23" r="84.38"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>6. 在啟動器點擊「自動下載並安裝」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/first-6.webp" width="1738" height="1322" loading="lazy" alt="在啟動器點擊「自動下載並安裝」。">
+            <svg viewBox="0 0 1738 1322" aria-hidden="true"><circle class="click-mark" cx="1115.73" cy="1050.10" r="117.20"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>7. 等候下載及安裝完成。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/first-7.webp" width="1738" height="1322" loading="lazy" alt="等候下載及安裝完成。">
+            
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>8. 點擊「開始遊戲」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/first-8.webp" width="1738" height="1322" loading="lazy" alt="點擊「開始遊戲」。">
+            <svg viewBox="0 0 1738 1322" aria-hidden="true"><circle class="click-mark" cx="1111.04" cy="1050.10" r="107.82"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>9. 如未有帳號，在登入畫面右下角點擊「註冊帳號」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/update-8.webp" width="1420" height="1270" loading="lazy" alt="如未有帳號，在登入畫面右下角點擊「註冊帳號」。">
+            <svg viewBox="0 0 1420 1270" aria-hidden="true"><circle class="click-mark" cx="1098.87" cy="1058.78" r="67.55"/></svg>
+          </div>
+        </figure><p class="muted manual-links">如需手動安裝，可下載         <a href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Pack1-v3.zip">Pack1 - base.pck</a> 及
+        <a href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Pack2-v4.zip">Pack2 - res.pck</a>，並將兩個 ZIP 內的 <code>GKK2</code> 資料夾合併到同一安裝位置。</p>
         </div>
-      </figure>
-      <figure class="guide-step">
-        <figcaption><h3>2. 解壓 Pack1</h3><p>開啟 Pack1 ZIP，將裡面的 GKK2 資料夾拖到相同的安裝位置。Windows 詢問時，確認合併資料夾。</p></figcaption>
-        <div class="guide-shot">
-          <img src="images/2-unzip-pack1.webp" width="1624" height="1024" alt="檔案總管開啟 Pack1 ZIP，Install 內已有 Game Core 的 GKK2 資料夾。">
-          <svg viewBox="0 0 100 80.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 8.8 26.0 C 18 30 24 71 66.6 72.3 M 64.1 70.6 L 66.6 72.3 L 63.9 73.8"/></svg>
-          <span class="guide-box" style="--x:0.8%;--y:1.875%;--w:16.7%;--h:6.374999999999999%" aria-hidden="true"></span><span class="guide-box" style="--x:1.6%;--y:29.5%;--w:7.1%;--h:4.375%" aria-hidden="true"></span>
-          <span class="guide-note" style="--x:28%;--y:80.0%" aria-hidden="true">拖放 GKK2 資料夾</span>
+      </div>
+    </section><section class="instruction" data-open="false">
+      <h2><button class="instruction-toggle" id="update-toggle" type="button" aria-expanded="false" aria-controls="update-steps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>從0.4.2 更新</button></h2>
+      <div class="instruction-slide" id="update-steps" role="region" aria-labelledby="update-toggle" inert>
+        <div class="instruction-content">
+        <figure class="guide-step">
+          <figcaption>1. 關閉遊戲及啟動器。開啟新版啟動器 ZIP，將 GKK2.exe 拖到原有的 GKK2 資料夾。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/update-1.webp" width="1420" height="1270" loading="lazy" alt="關閉遊戲及啟動器。開啟新版啟動器 ZIP，將 GKK2.exe 拖到原有的 GKK2 資料夾。">
+            <svg viewBox="0 0 1420 1270" aria-hidden="true"><rect class="zip-mark" x="959" y="645" width="350" height="42" rx="5"/><defs><marker id="update-1-arrow" markerWidth="22" markerHeight="22" refX="20" refY="11" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 2 L20 11 L1 20 Z" fill="#ffe05b"/></marker></defs><path class="drag-mark" d="M 903 1000 C 774 1000 710 826 593 779" marker-end="url(#update-1-arrow)"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>2. 選擇「取代目的地中的檔案」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/update-2.webp" width="1420" height="1270" loading="lazy" alt="選擇「取代目的地中的檔案」。">
+            <svg viewBox="0 0 1420 1270" aria-hidden="true"><circle class="click-mark" cx="675.53" cy="878.19" r="130.60"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>3. 開啟新版啟動器。若出現 Windows SmartScreen 提示，確認檔案來自本頁後，點擊「其他資訊」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/update-3.webp" width="1420" height="1270" loading="lazy" alt="開啟新版啟動器。若出現 Windows SmartScreen 提示，確認檔案來自本頁後，點擊「其他資訊」。">
+            <svg viewBox="0 0 1420 1270" aria-hidden="true"><circle class="click-mark" cx="328.76" cy="481.88" r="63.05"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>4. 點擊「仍要執行」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/update-4.webp" width="1420" height="1270" loading="lazy" alt="點擊「仍要執行」。">
+            <svg viewBox="0 0 1420 1270" aria-hidden="true"><circle class="click-mark" cx="891.70" cy="1121.38" r="85.57"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>5. 在啟動器點擊「自動下載並安裝」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/update-5.webp" width="1420" height="1270" loading="lazy" alt="在啟動器點擊「自動下載並安裝」。">
+            <svg viewBox="0 0 1420 1270" aria-hidden="true"><circle class="click-mark" cx="1175.43" cy="1040.32" r="121.60"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>6. 等候下載及安裝完成。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/update-6.webp" width="1420" height="1270" loading="lazy" alt="等候下載及安裝完成。">
+            
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>7. 點擊「開始遊戲」。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/update-7.webp" width="1420" height="1270" loading="lazy" alt="點擊「開始遊戲」。">
+            <svg viewBox="0 0 1420 1270" aria-hidden="true"><circle class="click-mark" cx="1170.92" cy="1040.32" r="121.60"/></svg>
+          </div>
+        </figure><figure class="guide-step">
+          <figcaption>8. 在登入畫面左下角確認版本。</figcaption>
+          <div class="guide-shot">
+            <img src="images/launcher-guide/update-8.webp" width="1420" height="1270" loading="lazy" alt="在登入畫面左下角確認版本。">
+            <svg viewBox="0 0 1420 1270" aria-hidden="true"><rect class="zip-mark" x="155" y="1080" width="131" height="20" rx="5"/></svg>
+          </div>
+        </figure>
         </div>
-      </figure>
-      <figure class="guide-step">
-        <figcaption><h3>3. 解壓 Pack2</h3><p>開啟 Pack2 ZIP，將裡面的 GKK2 資料夾拖到相同的安裝位置，再次合併。</p></figcaption>
-        <div class="guide-shot">
-          <img src="images/3-unzip-pack2.webp" width="1624" height="1024" alt="檔案總管開啟 Pack2 ZIP，並將內容合併至 Install 內同一個 GKK2 資料夾。">
-          <svg viewBox="0 0 100 80.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 8.8 26.0 C 18 30 24 67 70.0 69.4 M 67.5 67.7 L 70.0 69.4 L 67.3 70.9"/></svg>
-          <span class="guide-box" style="--x:0.8%;--y:1.875%;--w:16.7%;--h:6.374999999999999%" aria-hidden="true"></span><span class="guide-box" style="--x:1.6%;--y:29.5%;--w:7.1%;--h:4.375%" aria-hidden="true"></span>
-          <span class="guide-note" style="--x:28%;--y:80.0%" aria-hidden="true">拖放 GKK2 資料夾</span>
-        </div>
-      </figure>
-      <figure class="guide-step">
-        <figcaption><h3>4. 檢查安裝結果</h3><p>開啟合併後的 GKK2 資料夾，確認下列五項都在同一層。然後開啟 GKK2.exe。</p><ul class="guide-check"><li><code>engine</code></li><li><code>runtime</code></li><li><code>GKK2.exe</code></li><li><code>res.pck</code></li><li><code>base.pck</code></li></ul></figcaption>
-        <div class="guide-shot">
-          <img src="images/4-after-unzip.webp" width="1624" height="806" alt="合併後的 GKK2 資料夾顯示 engine、runtime、GKK2.exe 和兩個 PCK 檔案。">
-          <svg viewBox="0 0 100 63.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 32.55 28.6 V 30.1 M 31.5 29.0 L 32.55 30.1 L 33.6 29.0"/></svg>
-          <span class="guide-box" style="--x:4.0%;--y:48.41269841269841%;--w:56.9%;--h:35.3968253968254%" aria-hidden="true"></span><span class="guide-box" style="--x:26.8%;--y:48.41269841269841%;--w:11.5%;--h:26.031746031746028%" aria-hidden="true"></span>
-          <span class="guide-note" style="--x:4.0%;--y:87.3015873015873%" aria-hidden="true">確認這五項都在同一層</span><span class="guide-note" style="--x:26.8%;--y:39.682539682539684%" aria-hidden="true">開啟 GKK2.exe</span>
-        </div>
-      </figure>
-      <figure class="guide-step">
-        <figcaption><h3>5. 註冊帳號</h3><p>在登入畫面右下角點擊「註冊帳號」。填寫資料後，在視窗內點擊「註冊」。</p></figcaption>
-        <div class="guide-shot">
-          <img src="images/5-create-account.webp" width="1624" height="1280" alt="GKK2 登入畫面，右下角有「註冊帳號」按鈕，並已開啟建立帳號視窗。">
-          <svg viewBox="0 0 100 100.0" preserveAspectRatio="none" aria-hidden="true"><path class="guide-arrow" d="M 77 96 Q 81 96 83.3 94.6 M 81.4 93.8 L 83.3 94.6 L 82.1 96.5"/></svg>
-          <span class="guide-box" style="--x:83.6%;--y:92.1%;--w:10.4%;--h:4.0%" aria-hidden="true"></span>
-          <span class="guide-note" style="--x:57%;--y:94.0%" aria-hidden="true">點擊「註冊帳號」</span>
-        </div>
-      </figure>
-    </section>
+      </div>
+    </section></div>
   </main>
+<script>
+  const setOpen = (button, open) => {
+    button.setAttribute('aria-expanded', String(open));
+    button.closest('.instruction').dataset.open = String(open);
+    document.getElementById(button.getAttribute('aria-controls')).inert = !open;
+  };
+  for (const button of document.querySelectorAll('.instruction-toggle')) {
+    button.addEventListener('click', () => setOpen(button, button.getAttribute('aria-expanded') !== 'true'));
+  }
+  const update = document.getElementById('update-toggle');
+  const openUpdate = (moveFocus) => {
+    const wasOpen = update.getAttribute('aria-expanded') === 'true';
+    setOpen(update, true);
+    if (moveFocus) update.focus({preventScroll: true});
+    const scroll = () => update.closest('.instruction').scrollIntoView({block: 'start'});
+    if (wasOpen || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      scroll();
+    } else {
+      // Wait for room below the heading before asking the browser to align it.
+      document.getElementById('update-steps').addEventListener('transitionend', () => {
+        if (update.getAttribute('aria-expanded') === 'true') scroll();
+      }, {once: true});
+    }
+  };
+  const updateCard = document.querySelector('[aria-labelledby="upgrade-042"]');
+  updateCard.querySelector('.card-action').addEventListener('click', () => openUpdate(true));
+  updateCard.querySelector('.download').addEventListener('click', () => openUpdate(false));
+</script>
 </body>
 </html>
