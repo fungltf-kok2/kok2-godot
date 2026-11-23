@@ -67,7 +67,7 @@
     </header>
     <div class="install-paths">
       <section aria-labelledby="first-download">
-        <h2 id="first-download">首次下載</h2>
+        <h2 id="first-download"><button class="card-action" type="button" aria-controls="first-steps">首次下載</button></h2>
         <p><a class="download" href="https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.5/GKK2-Core-0.4.5-Windows.zip">下載 Game Core</a></p>
 
       </section>
@@ -203,27 +203,30 @@
     button.closest('.instruction').dataset.open = String(open);
     document.getElementById(button.getAttribute('aria-controls')).inert = !open;
   };
-  for (const button of document.querySelectorAll('.instruction-toggle')) {
+  const toggles = [...document.querySelectorAll('.instruction-toggle')];
+  for (const button of toggles) {
     button.addEventListener('click', () => setOpen(button, button.getAttribute('aria-expanded') !== 'true'));
   }
-  const update = document.getElementById('update-toggle');
-  const openUpdate = (moveFocus) => {
-    const wasOpen = update.getAttribute('aria-expanded') === 'true';
-    setOpen(update, true);
-    if (moveFocus) update.focus({preventScroll: true});
-    const scroll = () => update.closest('.instruction').scrollIntoView({block: 'start'});
-    if (wasOpen || matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      scroll();
-    } else {
-      // Wait for room below the heading before asking the browser to align it.
-      document.getElementById('update-steps').addEventListener('transitionend', () => {
-        if (update.getAttribute('aria-expanded') === 'true') scroll();
-      }, {once: true});
-    }
-  };
-  const updateCard = document.querySelector('[aria-labelledby="upgrade-042"]');
-  updateCard.querySelector('.card-action').addEventListener('click', () => openUpdate(true));
-  updateCard.querySelector('.download').addEventListener('click', () => openUpdate(false));
+  const panels = [...document.querySelectorAll('.instruction-slide')];
+  let latestSelection = 0;
+  for (const action of document.querySelectorAll('.card-action')) {
+    const targetId = action.getAttribute('aria-controls');
+    const target = document.getElementById(targetId);
+    const heading = document.getElementById(target.getAttribute('aria-labelledby'));
+    const select = async (moveFocus) => {
+      const selection = ++latestSelection;
+      for (const toggle of toggles) setOpen(toggle, toggle === heading);
+      if (moveFocus) heading.focus({preventScroll: true});
+      // The other panel can collapse above this heading and change its position.
+      const transitions = panels.flatMap(panel => panel.getAnimations());
+      await Promise.allSettled(transitions.map(transition => transition.finished));
+      if (selection === latestSelection && heading.getAttribute('aria-expanded') === 'true') {
+        heading.closest('.instruction').scrollIntoView({block: 'start'});
+      }
+    };
+    action.addEventListener('click', () => select(true));
+    action.closest('section').querySelector('.download').addEventListener('click', () => select(false));
+  }
 </script>
 </body>
 </html>
