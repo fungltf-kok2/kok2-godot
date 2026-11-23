@@ -1,0 +1,1101 @@
+{
+  "version": "0.4.2",
+  "packages": [
+    {
+      "id": "core",
+      "url": "https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.2/GKK2-Core-0.4.2-Windows.zip",
+      "bytes": 123969276,
+      "sha256": "dd7450704264939b347845c088e070028a62f6084b4b446afb88c1b66e1cb184"
+    },
+    {
+      "id": "pack1",
+      "url": "https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.0/GKK2-Pack1-v2.zip",
+      "bytes": 184795078,
+      "sha256": "c54e259d4198664329fe8a162afd90ab44dbb9a52bc9a996ac7fd43af5e5ebd6"
+    },
+    {
+      "id": "pack2",
+      "url": "https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.2/GKK2-Pack2-v3.zip",
+      "bytes": 1628982104,
+      "sha256": "ce48bd4aef46fa055e18f31d49f4d8d561385d92c064223f6b8c1318057c2fed"
+    }
+  ],
+  "build": 4002,
+  "references": [
+    {
+      "id": "core",
+      "bytes": 123969276,
+      "sha256": "dd7450704264939b347845c088e070028a62f6084b4b446afb88c1b66e1cb184",
+      "kind": "package",
+      "files": [
+        {
+          "path": "engine/data_GKK2_windows_x86_64/clretwrc.dll",
+          "bytes": 311056,
+          "sha256": "c78605f3d54c17048715442a67e02c104edf16ba63845e76e5c58ea39f3eab5d"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/clrgc.dll",
+          "bytes": 668448,
+          "sha256": "ccf2823c73204a39dc0a1de9e9b948b87bb9243f710ab53a6e0df4c159bef7d4"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/clrjit.dll",
+          "bytes": 1785096,
+          "sha256": "91a91d35eb8d85293dff960e8431963114aefb9b62b0c261c0012ed040a2fe44"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/coreclr.dll",
+          "bytes": 5044488,
+          "sha256": "db1d6deb3b4a74769db761eedf669142ab2d759eba324672de2649ef3d88e7f0"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/createdump.exe",
+          "bytes": 61752,
+          "sha256": "4b82afbe3419eda1b9c9742f55ca2a2692cdf9c5c23b61068313494b3164925b"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/e_sqlite3.dll",
+          "bytes": 1978880,
+          "sha256": "b7385d722c83fb52142a00477a726723745916d22a555711ee89834c1111fb2e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/GKK2.deps.json",
+          "bytes": 32743,
+          "sha256": "6e9a17e04530e5dc18f1d87992087808eceb410801b10975c79f5e134d401058"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/GKK2.dll",
+          "bytes": 573440,
+          "sha256": "11a1b638fb89e3b255fb98112cc8d0817cc83526fc9f96764711d970cb1f2b83"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/GKK2.pdb",
+          "bytes": 298884,
+          "sha256": "a37e5a7ba28adb7ed07f21d06bd801219b1651f5d36a3689a7da64b4ad408276"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/GKK2.runtimeconfig.json",
+          "bytes": 371,
+          "sha256": "5d7d843ec3fa69473fc22de81de70b7f42c621ef493495c1750cfa7703928d85"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/GodotSharp.dll",
+          "bytes": 5769216,
+          "sha256": "0460408e066a95ad8d3fd2e43106a8931e559225f4c2ffbd665317f9d4324531"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/hostfxr.dll",
+          "bytes": 350472,
+          "sha256": "f451a4839bd27a10fd03e751c843f2389e71e76a2f7bf418a650a53844d21d1f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/hostpolicy.dll",
+          "bytes": 393488,
+          "sha256": "29bcb525992e2bf1dc2c66918450ade3b36e88226b1ceab18a8c110a0e0da0dc"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Kok2.Client.dll",
+          "bytes": 78848,
+          "sha256": "d8e8d83881c342c9510afa6972012495894f6bdf41e94a3d42044f26d27fb211"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Kok2.Client.pdb",
+          "bytes": 23680,
+          "sha256": "a131a921c6777ee6b988acf93c4df14b388bdfddf247b80d397d2ebe7237d609"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Kok2.Contracts.dll",
+          "bytes": 264704,
+          "sha256": "1626be6553601563fdb97f16f117b1fa9008dcb6a9385e054bcb0049fa9f634a"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Kok2.Contracts.pdb",
+          "bytes": 74688,
+          "sha256": "e71a99cc5771e46c9f90ddf1a1e483177b3efdca4eee025a17573207fa111ee0"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Kok2.Host.deps.json",
+          "bytes": 32235,
+          "sha256": "bcc023b9de17ace3bc630e5bb8d96585331322f259f9acea17faa8812cc381b3"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Kok2.Host.exe",
+          "bytes": 138752,
+          "sha256": "e7dd1643ee5e1ca6f84b7231d97020c65b16aa24f80c5572648ab675e72e9d71"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Kok2.Host.runtimeconfig.json",
+          "bytes": 371,
+          "sha256": "5d7d843ec3fa69473fc22de81de70b7f42c621ef493495c1750cfa7703928d85"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Microsoft.CSharp.dll",
+          "bytes": 1005832,
+          "sha256": "fba4224e5deabccd781bd7e0371c16a9765f7be0ea165f8bb499f5d62f4531bf"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Microsoft.Data.Sqlite.dll",
+          "bytes": 174904,
+          "sha256": "88551560cc4857c1ad24280850eb0ce68286d19339692c96ad34abc0d43b4b94"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Microsoft.DiaSymReader.Native.amd64.dll",
+          "bytes": 2309152,
+          "sha256": "7f8dcf37d9d66eae14c48a79fa2fcd447bd0f38a21be0203a9c4a89398aacf28"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Microsoft.VisualBasic.Core.dll",
+          "bytes": 1247520,
+          "sha256": "eea806d40be4c2fb909072df32de259ec476e9a7cc749c37447994ffc340f1ad"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Microsoft.VisualBasic.dll",
+          "bytes": 17584,
+          "sha256": "eca8f5d0a6063d158cefd6c125c0053171e53cded0d8133197f77cb1fa289e20"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Microsoft.Win32.Primitives.dll",
+          "bytes": 15640,
+          "sha256": "a682b72f9d80bc517f197a0ff85cd2858eb743d8cb6e8453c946e413bd10c0e1"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/Microsoft.Win32.Registry.dll",
+          "bytes": 120992,
+          "sha256": "853da3e1e5ba29decfc91a39fa1b70955bdc63e18f034ae119635df53704e9d9"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/mscordaccore.dll",
+          "bytes": 1338400,
+          "sha256": "61350e7ee96e614900d641b4ecc3f35271aa2ba72c0455ae0d021e20c95f9a3e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/mscordaccore_amd64_amd64_8.0.824.36612.dll",
+          "bytes": 1338400,
+          "sha256": "61350e7ee96e614900d641b4ecc3f35271aa2ba72c0455ae0d021e20c95f9a3e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/mscordbi.dll",
+          "bytes": 1241520,
+          "sha256": "1676df96bf8d0da277f1adc2102e7fc711240982d61c31610f83474f093092f4"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/mscorlib.dll",
+          "bytes": 59552,
+          "sha256": "217bc7c04be852b4fcf8104f8ba8f673f1b177d2d8c5caf455e7a18e6bbe2097"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/mscorrc.dll",
+          "bytes": 136984,
+          "sha256": "95eed17ca001846333831da4db370fb838ae114cce512db31380e8b45c464024"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/msquic.dll",
+          "bytes": 538136,
+          "sha256": "2d67e87859ecaeb15c4dd621b0983f1a9ad3e2aa9b11624c018a43e6d6b06bec"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/netstandard.dll",
+          "bytes": 101024,
+          "sha256": "e7bf779cb608124a7812160ce3d8bbe83c1e49c46a81ee0c2dc91447f191d1bb"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/SQLitePCLRaw.batteries_v2.dll",
+          "bytes": 5120,
+          "sha256": "815ce410c9eab531dd219318e3ba16c5e38e83d361cfbbdbb4bbca222c497b0b"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/SQLitePCLRaw.core.dll",
+          "bytes": 51200,
+          "sha256": "af340ac9eb9195795660d7fc1114f486b6ab63998f33176e2f24c8e0acb9aa84"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/SQLitePCLRaw.provider.e_sqlite3.dll",
+          "bytes": 36864,
+          "sha256": "df996bcae63c2cabcfe8d4b9c5110eb39a2a4706178b07d875665391c6eb3995"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.AppContext.dll",
+          "bytes": 15520,
+          "sha256": "e0ed6218eb92190388e554288c0794cf3e85018f85eb753d1d6ee90167628d99"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Buffers.dll",
+          "bytes": 15536,
+          "sha256": "236910220ecdc4f1e7b0a6effbed8a9177aee6bcb090f16807e83368f17563db"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Collections.Concurrent.dll",
+          "bytes": 276744,
+          "sha256": "635d3192ebc262dceafb679c30d63a06375d686e9e9bad9e43b1914b4ace483e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Collections.dll",
+          "bytes": 260272,
+          "sha256": "7ee67cdc969f5bd5ba1a4e99a17ed8a67c2dd835537a982cb41a7ebe3ad025fe"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Collections.Immutable.dll",
+          "bytes": 837896,
+          "sha256": "fc48aa677a344f912c1a9160115dafd396b4f69eedd27f4b53b14c2b512e92d2"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Collections.NonGeneric.dll",
+          "bytes": 104712,
+          "sha256": "4f96e191302a84c970545aadb2fc53fa9b5455b1de54187a5373e0e3b5c90991"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Collections.Specialized.dll",
+          "bytes": 104608,
+          "sha256": "c3d7055a0c71a9e8641c7883dbbdffebdbb27d2350de43ba925d947662533daf"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ComponentModel.Annotations.dll",
+          "bytes": 203024,
+          "sha256": "ce51c0a016e0d830bb2325b917de3b959e42df82c47a681287c97f0c27846af4"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ComponentModel.DataAnnotations.dll",
+          "bytes": 17072,
+          "sha256": "0816febc2ba00d8cc16c843a5d629adc4648a36eb45082de8f0a29acd5aead45"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ComponentModel.dll",
+          "bytes": 30880,
+          "sha256": "a3e2fe9700b643fccce0628540a846f45714f51a9da17c0ffe56bdc4c739046f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ComponentModel.EventBasedAsync.dll",
+          "bytes": 47368,
+          "sha256": "a28ce11cfa6608760f22e102423bfcd6ac33b693287c1f15afbcdabd3ebaaecb"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ComponentModel.Primitives.dll",
+          "bytes": 80032,
+          "sha256": "7f450304cd7ff566c745ea2c776160865db400d42a2edc206020d8735c7b233f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ComponentModel.TypeConverter.dll",
+          "bytes": 743696,
+          "sha256": "e5d98e1abe75c19b49952c9d5d4e28b54d336a73b9c14773fb4e7197bae00e3a"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Configuration.dll",
+          "bytes": 19616,
+          "sha256": "d88bb22ec1ff049550d1dd13b8b9c27b094822fbf73d034bdb4f5546f1aec579"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Console.dll",
+          "bytes": 174240,
+          "sha256": "577d62369b948ec8dac8d01403987007edef6409a8fae7df733fbbc068086a75"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Core.dll",
+          "bytes": 23840,
+          "sha256": "3735702159e6d3d1eaca9bb7a9763d1ce58f84a4ed246066ef1780f6aec67f63"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Data.Common.dll",
+          "bytes": 2861216,
+          "sha256": "1bb6848e76a1ac2966515ee04b80fff63a1566cc086f267b184040e9f681e808"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Data.DataSetExtensions.dll",
+          "bytes": 16032,
+          "sha256": "61bd0cbd9c8c85a1b6c783eebd1568b40923d2ebf4c0967418d6202371ce36ed"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Data.dll",
+          "bytes": 25376,
+          "sha256": "a4d48f2c0f6c22731a57d1336c82ebdce6e5ba3ee7e13bfd4893979e53132fe7"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.Contracts.dll",
+          "bytes": 16648,
+          "sha256": "560e53de0e025cde566c2c30080da83e3da28d592d5bcffba78ccc6198f2b2a8"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.Debug.dll",
+          "bytes": 16136,
+          "sha256": "40e5813eab9d7fa7a1914dbbd8e452c04f9ff053c5a4e5be494dc85ac4bd9246"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.DiagnosticSource.dll",
+          "bytes": 415904,
+          "sha256": "9a8f55961a23b981f489ae6f7fbc7b5919a60cc181caad9b9c248d3e3e542d43"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.FileVersionInfo.dll",
+          "bytes": 47384,
+          "sha256": "7d3347f76557d5655a5bbdad0477f5da12e337fc77e86b1b91e269a3b3a023b5"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.Process.dll",
+          "bytes": 338080,
+          "sha256": "3468b4717f086423052fcbd305cd3151cc555ef0045b9269d43ccedca838e47a"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.StackTrace.dll",
+          "bytes": 47264,
+          "sha256": "d10ab35b57c343c006f982473d98ed2d2125d6d311b131390113011bc96d820e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.TextWriterTraceListener.dll",
+          "bytes": 67848,
+          "sha256": "5468bbb816b4a21af610388c9aa8cc2df47a581e9aebf81eea985c8d1eea80b1"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.Tools.dll",
+          "bytes": 15648,
+          "sha256": "8c6b948d52a18e77b796e5ae43139e155e52362075b9d3f94929bd2e1c20d3c0"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.TraceSource.dll",
+          "bytes": 145680,
+          "sha256": "0f2701ea7067203f84d6e8d3e5e6d45c00434b41175c3cf4f7add5b17d7f437a"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Diagnostics.Tracing.dll",
+          "bytes": 16656,
+          "sha256": "f0b69fbdb0540a52a66e7a7b5c11476e29fb9adeb2dc7d5ff88ea12d36843d5b"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.dll",
+          "bytes": 50336,
+          "sha256": "36e9f61da6bf4b6aef5073dd639bb6174397a53573e3b0ee754ac5a997268070"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Drawing.dll",
+          "bytes": 20640,
+          "sha256": "3fac9cf2ff6135b1fc90db8a2c83e9b45f77e21b9b59c7cdb4a7c2ee86f9e127"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Drawing.Primitives.dll",
+          "bytes": 133392,
+          "sha256": "e8a06462cdfb428c9acfc5aca4bb97ab6d2c715e8029a6cd8fd5760f831a3d92"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Dynamic.Runtime.dll",
+          "bytes": 16648,
+          "sha256": "45886be34b3b81717b4913564361b12d7ae3b9926bc85f80df64026c4ee9b4d7"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Formats.Asn1.dll",
+          "bytes": 243872,
+          "sha256": "d563c1eaf08dfda8fd1860bf00fcab903c85c91a299379d6ef73c3aeca2b7a9a"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Formats.Tar.dll",
+          "bytes": 272544,
+          "sha256": "b649bbe057f0c5b5eefef65087afb3ea54ee2dbde1bb03c532a0d894e783c031"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Globalization.Calendars.dll",
+          "bytes": 16032,
+          "sha256": "b6b0e4cfaa7c085a4854b80327052a0ada77cbd8d6242c73316aff391a14ee56"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Globalization.dll",
+          "bytes": 16160,
+          "sha256": "af0431593029be941368eeb132dc9bdd8666a1e4735e5f7209b2b998a50b25af"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Globalization.Extensions.dll",
+          "bytes": 15648,
+          "sha256": "41d02c060070592cb1e75c25e1f052823de17de692f65c53a0050e292156b4c8"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.Compression.Brotli.dll",
+          "bytes": 84128,
+          "sha256": "a298995294c59d04947f91290fb7030acdc4db3c5b6b1981fbc8c0136cd1b25c"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.Compression.dll",
+          "bytes": 264472,
+          "sha256": "d57cfcf89fdfafc8b5f86b7da586b72aff6b1997ae7896a17323993bf1741389"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.Compression.FileSystem.dll",
+          "bytes": 15520,
+          "sha256": "1f3f7eb23de0768f8bbe4f043ec8818e42ad66d7438a60991b2ced69f67a94f5"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.Compression.Native.dll",
+          "bytes": 831240,
+          "sha256": "6e9365e60f9060b3e492f489e1c13ec07bd1f368ffcc5ba24d98530bdcd2d468"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.Compression.ZipFile.dll",
+          "bytes": 55456,
+          "sha256": "1729ee8e1cf5fc6ef86cf9aef5bd2f689c0aea02055963befe23abe4c49f701c"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.dll",
+          "bytes": 16032,
+          "sha256": "a58420178170177f772551c4aa7e4807b2672a8655f828600d47a3958cc40f7c"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.FileSystem.AccessControl.dll",
+          "bytes": 104608,
+          "sha256": "3f9b710e88c21089d7d7ed538b4612527a2bc5c160a41c148b872a8c84fba756"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.FileSystem.dll",
+          "bytes": 16032,
+          "sha256": "432ab703b7dfa567ec4e9c4717dfd2b9bb0ec8f373dbda0771c10a5897e08d9d"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.FileSystem.DriveInfo.dll",
+          "bytes": 55568,
+          "sha256": "ec73ef6b6be1c451c5222c593e7178dad79c8e61292bfbe44cd1292d5bf6d9bc"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.FileSystem.Primitives.dll",
+          "bytes": 15632,
+          "sha256": "57304750022f054c5aa0097450c54d20484bf3aa564bcb1e97847fbf6c2e1e21"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.FileSystem.Watcher.dll",
+          "bytes": 88336,
+          "sha256": "61865dd41c1516623e403109118ddfa7645fd95121cbac0583ba1ca2d541e556"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.IsolatedStorage.dll",
+          "bytes": 92440,
+          "sha256": "a3fe636d2e150bba7692e47e891e5e81501060d3e136cc7df45aec21429b202b"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.MemoryMappedFiles.dll",
+          "bytes": 84128,
+          "sha256": "2a5ce27b0e82264e6fa09504680b32b0014be188fef4aedfe86d3392c3190477"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.Pipes.AccessControl.dll",
+          "bytes": 16672,
+          "sha256": "e7db86f2176ec876de7af4becd8b7c4eea60e133f4866fc014403f318928cd24"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.Pipes.dll",
+          "bytes": 166048,
+          "sha256": "7c2a4ead45c9bacd5ae24bdf7c1d2481f1a06f75088e7f884974aa0257e798fa"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.IO.UnmanagedMemoryStream.dll",
+          "bytes": 15632,
+          "sha256": "7800b0fd6aac7979cac550e1baae3afac15cfa8081fc186b27553bf7cba7a0a3"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Linq.dll",
+          "bytes": 542880,
+          "sha256": "bdcf09bba6a4de7d73feaa0dba8802be86738b3de4e3e8d0ec79e2809f0f7e17"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Linq.Expressions.dll",
+          "bytes": 3676336,
+          "sha256": "10e4bc750f17578252293aaf7192e24e72a330d3edc0146be9245e9586cac19d"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Linq.Parallel.dll",
+          "bytes": 805152,
+          "sha256": "a4e353c60f26eac3140f493c270320302bfb2e5ffcc1d4131682ea3e4c02d244"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Linq.Queryable.dll",
+          "bytes": 174352,
+          "sha256": "59656c67991255d19b868dc1f48d1ad10bc8d8b6c667f792c2c9affbf69e47ef"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Memory.dll",
+          "bytes": 157960,
+          "sha256": "344c7a232249c2ace65d2cc03d62c356fe3f56ad46a0cc4603a36ec7d0f5587f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.dll",
+          "bytes": 17568,
+          "sha256": "2e28bca4c04a512ce8b481b7fa8fa93a342406a5e554b9d9075f9ba20060701e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.Http.dll",
+          "bytes": 1730848,
+          "sha256": "b760cced33549528f6e101c491a0cac4064f644ef3e829ae127fd3f09a33fbff"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.Http.Json.dll",
+          "bytes": 129184,
+          "sha256": "7ce9e667b76c9f647e7124755bf25f56115c5ceb3a68dbdfb0254ce16aecf19e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.HttpListener.dll",
+          "bytes": 551184,
+          "sha256": "cdad57cc4b992a6bbe2bb79bacd6dd28d248694bf089731bb474bec682ca77c6"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.Mail.dll",
+          "bytes": 432416,
+          "sha256": "e1743acd71086bb1aa689aaccc9485aec04b2a7c2c15586ecdd5685ad881b7a5"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.NameResolution.dll",
+          "bytes": 112800,
+          "sha256": "e2a5ab5b077cbe3b7cdb0622eae9363e8d9c591ddab2ce87fce6777a510767a6"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.NetworkInformation.dll",
+          "bytes": 157856,
+          "sha256": "9f9cf0b569f370df63be323844009718090b6d4fd4e21ec8d4dd6b6cc2ffe8cf"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.Ping.dll",
+          "bytes": 96432,
+          "sha256": "fafdaaf0437e2c10b8343e5b1b2c744977b88cab7585fd27dcc12071b27f46f5"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.Primitives.dll",
+          "bytes": 231696,
+          "sha256": "d609294406b894bc0f60d10fb62ad7a819e3bcba3691a1825e4250364e23a7f1"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.Quic.dll",
+          "bytes": 280840,
+          "sha256": "32409e5b1f753b13850d2c88ccba73cb9cc4678d41f11a6b30c020af3b787054"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.Requests.dll",
+          "bytes": 346272,
+          "sha256": "3fa27a91daa93bd98f0ec6943dcb08531d799327b3e08e87ebc1bc9fcadf1cb8"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.Security.dll",
+          "bytes": 669856,
+          "sha256": "4b1c1c6254c0f73e5cc110f3bb3e342d11eff16eca5f0f678e5158e896dc67bc"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.ServicePoint.dll",
+          "bytes": 47368,
+          "sha256": "c85ba2f97897ac62919e6367e4fc05d166b3a4d13e5757e21998883312c52294"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.Sockets.dll",
+          "bytes": 547088,
+          "sha256": "91cd06310e6da6966a37c073f4fa4febb896bd09ee8658f308eb1709b335eb07"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.WebClient.dll",
+          "bytes": 170144,
+          "sha256": "ebb450e89de674b20c93e0108123ff1c1d2f217cf9cdf2e51609a84e76708687"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.WebHeaderCollection.dll",
+          "bytes": 67872,
+          "sha256": "9c4d605934307cfc9ed37acb1210368c8acc5c88b816931e7d022f8ae917cdca"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.WebProxy.dll",
+          "bytes": 43184,
+          "sha256": "d2eac1736d03ef60da6775105b7ac6d8e0c9855ca2437cf108b1dcbebf05cbf0"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.WebSockets.Client.dll",
+          "bytes": 100632,
+          "sha256": "8971c704c33bafe87445fd4b8e5417e2824f8f878052b11bed2ad02f7de31da0"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Net.WebSockets.dll",
+          "bytes": 190752,
+          "sha256": "7cd51a14e2e1d4231fa85440afb3047b65ab4f397bff37c91f50ed20def9a800"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Numerics.dll",
+          "bytes": 15520,
+          "sha256": "7ef9e8e2d7e8bcf66c0a1a22d6709d4732b4ccdc61f395a364da9591fbfda5a4"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Numerics.Vectors.dll",
+          "bytes": 16032,
+          "sha256": "759c6e9c3eee3344f73ee6fa8016f27816c2615bb079d1de9cd97eda35adaf24"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ObjectModel.dll",
+          "bytes": 80144,
+          "sha256": "ec4ea965b4bdc6886ef9ebb234bd568543ed9846cd6fa32e4eb33b5529841a38"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Private.CoreLib.dll",
+          "bytes": 13170968,
+          "sha256": "60ab682b551cc4e94e2de432149e032fd63ac0b6d15397decc4d8be87c6be1ab"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Private.DataContractSerialization.dll",
+          "bytes": 2082976,
+          "sha256": "29c546097ff7e5ac94202e71311ef2bcbae2d7ddea6bf8e951f1fb3bc942de75"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Private.Uri.dll",
+          "bytes": 260376,
+          "sha256": "f289bc9873ae0bd99db74e00f480c931ca94f3785251132c04699ab01893604b"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Private.Xml.dll",
+          "bytes": 7989512,
+          "sha256": "cfb4dba4ac73773f5eac02006f0fe7e6399cd67f5a12b4ce26c9f0f406a7eded"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Private.Xml.Linq.dll",
+          "bytes": 403616,
+          "sha256": "a113bb3bd9e8c13b1eaf126c3ec614a08c3193a51f52c277b3bd5f4dc00d08fb"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Reflection.DispatchProxy.dll",
+          "bytes": 75936,
+          "sha256": "7d1417c97cf840f4aebbd50a7179026bf78a099f6fa4304ffd8262342b965a3c"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Reflection.dll",
+          "bytes": 16672,
+          "sha256": "1b6b873f4c5f5985e7c3e6ba5693d1c676fe0773c9335003f97807712ededce7"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Reflection.Emit.dll",
+          "bytes": 129184,
+          "sha256": "88dfa993884c1277a3adcbc55ef44b4a38c55ec4f0f8c7768862377beae76dbc"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Reflection.Emit.ILGeneration.dll",
+          "bytes": 16136,
+          "sha256": "80c531b9cee91c4b770264add3788e7c55e168dab69a880616e25c288c1afd1b"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Reflection.Emit.Lightweight.dll",
+          "bytes": 16032,
+          "sha256": "253e1c6a59acb96db9ea8e4be48ea4e8040f885d602349b2b44753234709d49d"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Reflection.Extensions.dll",
+          "bytes": 15648,
+          "sha256": "aface1464df1d31bd96cc897f4d47c6b5a855707cbbfc954e624e68f3ac16372"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Reflection.Metadata.dll",
+          "bytes": 1116320,
+          "sha256": "f8dc3e1afc09a8c21b5c4c7afb17c520afe0263cce8366cf57471d1d203728ed"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Reflection.Primitives.dll",
+          "bytes": 16032,
+          "sha256": "b14da399fcf67c895f70f3b609937e28e7cb1cb7fe46eec51181f1cb5f8c6d6a"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Reflection.TypeExtensions.dll",
+          "bytes": 43168,
+          "sha256": "9784ca5f49d11e8a112d39ff3eb1105502a20fd2331ea1523cd2f491a5e8208b"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Resources.Reader.dll",
+          "bytes": 15536,
+          "sha256": "ef8a510d31e84cdb66278c00b62ccc92658c128026422a227a6774a2e8a727cc"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Resources.ResourceManager.dll",
+          "bytes": 16136,
+          "sha256": "9a3e5d6d51ae86a91d2ec90b2a2be5dc2210f032c140c349f04256de6ed441d5"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Resources.Writer.dll",
+          "bytes": 51376,
+          "sha256": "8974918f0ba83548bafa900918f93b35770a64d8dbc7a104188cd6ffc8d0f157"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.CompilerServices.Unsafe.dll",
+          "bytes": 15632,
+          "sha256": "bc700629d14bc36fe3fb97f28b9e0eca8c59312f85e3844749e738b374cfee7f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.CompilerServices.VisualC.dll",
+          "bytes": 30880,
+          "sha256": "2d796a9138318ac5bcfe96970f3c5920f8307856c1bee5f9d5beaef0369ae319"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.dll",
+          "bytes": 43680,
+          "sha256": "819e11fe3c456dfd56377233b2bae5bc11fef41fa3a8816ed30fafff74a2090f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Extensions.dll",
+          "bytes": 18192,
+          "sha256": "ad4c4c92bad3d1be04793a39377129a42c45c227fe404113fb9f9bebda3c4b06"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Handles.dll",
+          "bytes": 15632,
+          "sha256": "0d269d39f04173829f9686cffbd8af33030d2d6bbe42bf090fd35fb86da6fcf3"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.InteropServices.dll",
+          "bytes": 96528,
+          "sha256": "69de6ab16dfba66224b37e4fcd5e62afdf45f75c9f5c78bfd6cbfa09142390c8"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.InteropServices.JavaScript.dll",
+          "bytes": 51464,
+          "sha256": "64889ec4d820f87797894d0dbce86240830f8dec085a3c1dc6e21250f512e34e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.InteropServices.RuntimeInformation.dll",
+          "bytes": 15520,
+          "sha256": "b7ef3589e7f793d9780fa32efb2595c91a85d92e6e0ff62b5187142114f1707c"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Intrinsics.dll",
+          "bytes": 17056,
+          "sha256": "7af94b0d91de391be95ab3dc816ead7072cb2354199773fbb05c2d3ac1c3f871"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Loader.dll",
+          "bytes": 16144,
+          "sha256": "c160277c510e5a535b2369a7b12135e2e790edd1f34ec2b1e2fc80ed8de475c8"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Numerics.dll",
+          "bytes": 329888,
+          "sha256": "39562dc738f28e2994cee74207bee53c833231ec68b2885e403dc3d9c43b6821"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Serialization.dll",
+          "bytes": 17160,
+          "sha256": "3ff4f2c5a52617ac51b1b030fa1c77d5bce4cb39c173bb78efbbbc2a7c84bf66"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Serialization.Formatters.dll",
+          "bytes": 309536,
+          "sha256": "984ed1d9ac926ab13fbbd8712cdf3ca5a7701e57c1a22b684541e46ecfba9979"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Serialization.Json.dll",
+          "bytes": 16152,
+          "sha256": "17ad1f1709f3a153fa0dbd43d4dd46d2477d090949ae86e7e88953d8c19a83f0"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Serialization.Primitives.dll",
+          "bytes": 39200,
+          "sha256": "e91d3502b52775c240cc81b9d3bf36e503ce9c2640b45d1614bb667aa5c1849b"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Runtime.Serialization.Xml.dll",
+          "bytes": 17184,
+          "sha256": "3f91eec7fdf494d6c223b093024aca3b6f16444f89d1d7a26b2f4f289bc8f830"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.AccessControl.dll",
+          "bytes": 231688,
+          "sha256": "bc1f295790c53358899c6721e0ced2f33f695c2421b2bb97fab18f9dffdd0198"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Claims.dll",
+          "bytes": 100616,
+          "sha256": "d407c1380c52e1a04e554c0b134d9bc4699c7225290003ace8e988e4aeedbb25"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Cryptography.Algorithms.dll",
+          "bytes": 17568,
+          "sha256": "3bb8895b734d1967615845bd34fe9a3bb7aec23546d1e55c16678697b92e466d"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Cryptography.Cng.dll",
+          "bytes": 16656,
+          "sha256": "f45fbb7d188fef81bebfc32f177335fccb6ce9e9bc014cbb99752d8f085ceefc"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Cryptography.Csp.dll",
+          "bytes": 16152,
+          "sha256": "44bffa0d3d0c59afcb6205071167b52d6ae5db3e8f167c955fbc5592ee422510"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Cryptography.dll",
+          "bytes": 2050208,
+          "sha256": "60f3b82345e2812dcfdef98642b2ca707b34c51d917d86615df309714ef1e9d8"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Cryptography.Encoding.dll",
+          "bytes": 16032,
+          "sha256": "cf9436ff6a04184e6049ccbc5c27d638dfe5de134640c35a4d5873faa010fcc9"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Cryptography.OpenSsl.dll",
+          "bytes": 15536,
+          "sha256": "738f70cfac6a793f518db6e3586f2740bba663daabc07672ce2a4918a9ef5580"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Cryptography.Primitives.dll",
+          "bytes": 16136,
+          "sha256": "825a454e5b4595ca7f105a308288873a9a28f02eea1a524d395aed224dbd57a2"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Cryptography.X509Certificates.dll",
+          "bytes": 17168,
+          "sha256": "02c67b42bd1c6e8d8954f96c3ab7c00575e7faaaaccd58a8f60cd20cd74a2d43"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.dll",
+          "bytes": 18592,
+          "sha256": "5cd2e42d0c8c3bead4b8bd993750a3d5d266039daa52506f7bfc27783990226e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Principal.dll",
+          "bytes": 15640,
+          "sha256": "5f45b771954e4b7dc4213f1e808aa1c01971384f314e17a804595604fa272735"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.Principal.Windows.dll",
+          "bytes": 186528,
+          "sha256": "fa4952df244ac5dd6d5d36b62e25b2cd0bf844453196d29838638518cb6944b6"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Security.SecureString.dll",
+          "bytes": 15648,
+          "sha256": "d788b912a2fcada28a9a1e2d221aaca429d20a420b05315f173a5a5365bf3d5e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ServiceModel.Web.dll",
+          "bytes": 17056,
+          "sha256": "be6b73071c8e8bd1ef4702cfe2a5af73a926d64996479df2a6e296f942c4dd3c"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ServiceProcess.dll",
+          "bytes": 16032,
+          "sha256": "7bb1c84d14efccbcb84a1f075cc00814757df752e80a6fc472a1a4fac9e0c97e"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Text.Encoding.CodePages.dll",
+          "bytes": 862368,
+          "sha256": "f22c997008fda321a85557778f5bf95f369ae6db161a52d4bb08cea6991215a2"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Text.Encoding.dll",
+          "bytes": 16032,
+          "sha256": "5a33c014c9ad5c8a60e889f80f1d9e4b3d36dd10fab49bd1d2538325e7b6edab"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Text.Encoding.Extensions.dll",
+          "bytes": 16032,
+          "sha256": "08e5a63deb24f9f9df1aa4128f2020644a86edc8cc42d23d3e5e4e00a4a1f52a"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Text.Encodings.Web.dll",
+          "bytes": 133280,
+          "sha256": "e73e129e5aed0f39f9147cd1ff2e047b01227aa791943d69a1de4785b9598fb4"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Text.Json.dll",
+          "bytes": 1501456,
+          "sha256": "dc8b1118b266ec750af5b4480869e01a97751a2f55352ac6908cefb4a59499d1"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Text.RegularExpressions.dll",
+          "bytes": 1022128,
+          "sha256": "b9fe1181b9c0504d97940331b47da8817be5c202a0d57c2b92fe6909972f2012"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.Channels.dll",
+          "bytes": 133400,
+          "sha256": "20ddaba930ee090b47fa38722eb0d5d23c9f860e45b3a2c1f03cdb4ea1b69c53"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.dll",
+          "bytes": 84128,
+          "sha256": "5f4184fd0607dcb2e3006118b618aac3417b9c52e51c6d58c9c396a1f6af9720"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.Overlapped.dll",
+          "bytes": 16160,
+          "sha256": "d6ab3875c8feaf7d6fd9b1efd18b1ffd10fe46b2ff3a2f24d7fa5d16f927ec0f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.Tasks.Dataflow.dll",
+          "bytes": 489752,
+          "sha256": "e383de92aa93f424faeed789cda2b920699d4a6ec805e5fd46833dac9cd319a6"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.Tasks.dll",
+          "bytes": 17056,
+          "sha256": "35890b7af3c51962d8342bd17df24289438459971c0972ddc67e47534c78b790"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.Tasks.Extensions.dll",
+          "bytes": 16048,
+          "sha256": "578e16d2a7b2c1647f925a611962cf256d8915121b86b5a9eddea82a9b3c012f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.Tasks.Parallel.dll",
+          "bytes": 133296,
+          "sha256": "c44d73e3582228cae2cdbfe74f6a60d11b4e1b4fcbd7343fa52f3c3c12aea770"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.Thread.dll",
+          "bytes": 16032,
+          "sha256": "9b1f4f2c7fc17d2cd4f49fecdd6b8d71c77998f54509ef1b28f2910dc9a6b618"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.ThreadPool.dll",
+          "bytes": 16160,
+          "sha256": "7a22a638c6a751b85d112d9a1e929e7fdc2658856a4fe08b9f1de2019757717f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Threading.Timer.dll",
+          "bytes": 15640,
+          "sha256": "8ad0ab3216f296f993eb9fb0d911b202e0d3b435a63d35e3133b191dbcbdc8c9"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Transactions.dll",
+          "bytes": 16656,
+          "sha256": "8ff2322e5f56ae15e026ee299c3e437ef9fb581ab50c688e2870c9dc55c90411"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Transactions.Local.dll",
+          "bytes": 661664,
+          "sha256": "a5e3e04ca99f4b82c761370508ebe6e1dc7fe6b9463e904ba408afdbc16d5272"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.ValueTuple.dll",
+          "bytes": 15520,
+          "sha256": "acc824e034064dee4a74c3f2c1cab36c1ffb07773405168aa5fd1ea5026cefdc"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Web.dll",
+          "bytes": 15632,
+          "sha256": "7f2aebb25bbc9b473d639ad55ba2470ebc50a805c89bdb7ff3ce47a92df1ffde"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Web.HttpUtility.dll",
+          "bytes": 59672,
+          "sha256": "77b8748c3ecda6e06bffafe34f14840185e2ae2fb3abe3a4f6b577323c23ee62"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Windows.dll",
+          "bytes": 16136,
+          "sha256": "15e3c48d3c693f7182221bf369a528b33c99ee00c2e3840ed35f600fecdab77d"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Xml.dll",
+          "bytes": 23712,
+          "sha256": "4a23d5325ba071ab2ae359f524062c6cae2454a75ddaab206022ce877e3aa13b"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Xml.Linq.dll",
+          "bytes": 16032,
+          "sha256": "97c5a3ea6cc5086323eace63b8da07da484055ceda72856b98bdd507a6080b02"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Xml.ReaderWriter.dll",
+          "bytes": 22296,
+          "sha256": "1a10820beed89fe0a72d2d6a9e849001590b35625006ef53f67ec4981964b231"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Xml.Serialization.dll",
+          "bytes": 16544,
+          "sha256": "54c25cde74f7fa7c164e5e8c90bbbdb1a4f84ecd4b3c6f542560a6cc8bc55e4d"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Xml.XDocument.dll",
+          "bytes": 16032,
+          "sha256": "52fd1a9d7666db207e9f447a2f0c530c43539370633f1a8da4cb930b9f62b420"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Xml.XmlDocument.dll",
+          "bytes": 16136,
+          "sha256": "6ca75de642bfb7d7e4654161ee0a7ffaac4775406073d5bd6588d8fba9ce937f"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Xml.XmlSerializer.dll",
+          "bytes": 18192,
+          "sha256": "ef29dfaaebc33486376625e22bdbc96597785e99859a96e7dfddad0211ab6643"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Xml.XPath.dll",
+          "bytes": 16032,
+          "sha256": "468a023fae4823a00132b0d91ef77cd783a474b8ab16441ab5c879cb022397f4"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/System.Xml.XPath.XDocument.dll",
+          "bytes": 30896,
+          "sha256": "e8f7de93a7f5f6ad2a909b4b849c594eb872498d1f491dcf2eebfc740ede56a0"
+        },
+        {
+          "path": "engine/data_GKK2_windows_x86_64/WindowsBase.dll",
+          "bytes": 16560,
+          "sha256": "334f1ab36bad2c8ed2a4a387005eccc4c75382ae097e8ab0c737a18097252db7"
+        },
+        {
+          "path": "engine/PlanarReflectorCPP.windows.template_release.x86_64.dll",
+          "bytes": 562176,
+          "sha256": "a37836be7268a625562b3a5030e04b0775be022007a8ea7b1d22496084e9286c"
+        },
+        {
+          "path": "runtime/config/client_runtime.json",
+          "bytes": 79,
+          "sha256": "bfea06a196fea3d052e4c3d747320cb6794ad7a51f4b85ef7786478755f4f6db"
+        },
+        {
+          "path": "runtime/config/network_client.json",
+          "bytes": 247,
+          "sha256": "629e60d7ad0dc55b956d80fbd4811e5af8fefdb58b8d52fbe776587efeaf8ba3"
+        },
+        {
+          "path": "engine/GKK2.exe",
+          "bytes": 76607488,
+          "sha256": "d41f00a7962b6c106597d107229dcbaf755b874270723dd10dd431e0f23d6895"
+        },
+        {
+          "path": "engine/GKK2.pck",
+          "bytes": 53828876,
+          "sha256": "bdc7466ff20d3501bb1dbc6d2afe487e752659fb0d281820de5b656c36b234a8"
+        },
+        {
+          "path": "runtime/config/RELEASE_MANIFEST.json",
+          "bytes": 1207,
+          "sha256": "c3226e52f3555967e296ecc5d0b50d0612668389743dbb643792914815e875ed"
+        },
+        {
+          "path": "runtime/config/release_packs.json",
+          "bytes": 409,
+          "sha256": "b803a87e2a47b0b6cd1e2792a65d0f5366eb6ea0a43358bface57261c9d49a60"
+        },
+        {
+          "path": "使用方法.url",
+          "bytes": 68,
+          "sha256": "a7dffcd716daf30e7eb1d8cd7bcf88779082d8ef618ea70d06fa9ae48d39fbfb"
+        }
+      ]
+    },
+    {
+      "id": "pack1",
+      "bytes": 184795078,
+      "sha256": "c54e259d4198664329fe8a162afd90ab44dbb9a52bc9a996ac7fd43af5e5ebd6",
+      "kind": "package",
+      "files": [
+        {
+          "path": "GKK2-godot-assets-windows-x86_64-ef75de1805064082.pck",
+          "bytes": 184794844,
+          "sha256": "ef75de1805064082933db93ee3406791465a0f574b2a36b75413d2667163d169"
+        }
+      ]
+    },
+    {
+      "id": "pack2",
+      "bytes": 1628982104,
+      "sha256": "ce48bd4aef46fa055e18f31d49f4d8d561385d92c064223f6b8c1318057c2fed",
+      "kind": "package",
+      "files": [
+        {
+          "path": "runtime/config/ASSET_MANIFEST.json",
+          "bytes": 272,
+          "sha256": "48f2565ec2f67a0b1b7084ed6dad4d5a7f0c99c147092441f38dc7e026b4eed1"
+        },
+        {
+          "path": "GKK2-external-assets-bd2c877a3e5ceb4d.pck",
+          "bytes": 1628981468,
+          "sha256": "bd2c877a3e5ceb4db59258384d8416b1e41ab9f0eab6e8281773e7aed0dee8b7"
+        }
+      ],
+      "asset_manifest": "ewogICJzY2hlbWEiOiAiZ2trMi1hc3NldHMtdjEiLAogICJhc3NldF9pZGVudGl0eSI6ICJiZDJjODc3YTNlNWNlYjRkYjU5MjU4Mzg0ZDg0MTZiMWU0MWFiOWYwZWFiNmU4MjgxNzczZTdhZWQwZGVlOGI3IiwKICAiZmlsZXMiOiAyOTAzOCwKICAiYnl0ZXMiOiAyOTg3NTEzNTA5LAogICJwY2tfcGF0aCI6ICJHS0syLWV4dGVybmFsLWFzc2V0cy1iZDJjODc3YTNlNWNlYjRkLnBjayIsCiAgInBja19lbmNyeXB0ZWQiOiB0cnVlLAogICJwY2tfY29tcHJlc3NlZCI6IHRydWUKfQo="
+    }
+  ]
+}
