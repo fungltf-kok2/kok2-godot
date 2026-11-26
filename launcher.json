@@ -34,7 +34,7 @@
       "id": "core",
       "from_sha256": "7c2824239afe217099bb66633205c50e0437188ad2d2de5560575843bc14f092",
       "to_sha256": "b036035b65612c4d2edee34f772a8f873dab0b1e69eeed0add08b95e4993f26b",
-      "url": "https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.12/GKK2-Patch-core-b4011-to-b4012.zip",
+      "url": "https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.12/GKK2-Patch-core-v0.4.11-to-v0.4.12.zip",
       "bytes": 2427811,
       "sha256": "9174bcc6fd604a2aad05a03ad1eafecb814b8b68198af80924e9b5d9d880443c"
     }
