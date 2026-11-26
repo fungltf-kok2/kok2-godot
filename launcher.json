@@ -40,10 +40,11 @@
     }
   ],
   "launcher": {
-    "build": 4009,
-    "url": "https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.9/GKK2-Launcher-4009-Windows.exe",
-    "bytes": 72426007,
-    "sha256": "9519b82e9e6acaf4294c70b0d2b602801da4b02aa8fa49b465aa2ee4f122ac04"
+    "build": 4011,
+    "id": "launcher",
+    "url": "https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.11/GKK2-Launcher-4011-Windows.exe",
+    "bytes": 72430410,
+    "sha256": "9067c4f07a96300cc372eb000cd3874deba9b2641a2b6a9c4f8032015e08dbcf"
   },
   "announcements": [
     {
@@ -79,6 +80,22 @@
       "text": "修正部分 NPC 的頭部貼圖。套用校準後的場景光照，並更新預烘陰影及 VoxelGI 資料。"
     }
   ],
+  "launcher_bundle": {
+    "build": 4012,
+    "runtime_version": "299d74115e6a60d7",
+    "application": {
+      "id": "launcher-app",
+      "url": "https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.11/GKK2-Launcher-4012-Windows.zip",
+      "bytes": 496879,
+      "sha256": "25ef86b5f8749d776a26c8639d45f350aea1d0678dd74fe5bb1023766ec9b61e"
+    },
+    "dependencies": {
+      "id": "launcher-dependencies",
+      "url": "https://github.com/fungltf-kok2/kok2-godot/releases/download/v0.4.11/GKK2-Launcher-Dependencies-299d74115e6a60d7.zip",
+      "bytes": 70380935,
+      "sha256": "299d74115e6a60d75762e9e488e633fdc0e459af7bb0c9c3a4c4d903eb7e422c"
+    }
+  },
   "references": [
     {
       "id": "core",
